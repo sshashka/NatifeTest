@@ -136,7 +136,8 @@ final class ViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [dateLabel, infoStackView, collectionView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
-        stackView.distribution = .fill
+        stackView.contentMode = .scaleAspectFill
+        stackView.distribution = .fillEqually
         return stackView
     }()
     
@@ -183,7 +184,7 @@ private extension ViewController {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            infoStackView.heightAnchor.constraint(equalToConstant: 150),
+//            infoStackView.heightAnchor.constraint(equalToConstant: 150),
             rootStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             rootStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             rootStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),

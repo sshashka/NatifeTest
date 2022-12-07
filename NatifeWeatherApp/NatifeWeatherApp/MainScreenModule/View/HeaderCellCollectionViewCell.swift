@@ -13,6 +13,7 @@ final class HeaderCellCollectionViewCell: UICollectionViewCell {
     private let hourLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -27,6 +28,7 @@ final class HeaderCellCollectionViewCell: UICollectionViewCell {
     private let temperatureLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

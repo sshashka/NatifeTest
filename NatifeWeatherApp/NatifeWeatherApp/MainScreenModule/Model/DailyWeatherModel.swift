@@ -196,7 +196,7 @@ struct Evapotranspiration: Codable {
     let value: Double
     let unit: Unit?
     let unitType: Int
-    let phrase: Phrase?
+    let phrase: String?
 
     enum CodingKeys: String, CodingKey {
         case value = "Value"
@@ -210,13 +210,8 @@ struct Evapotranspiration: Codable {
         self.value = try container.decodeIfPresent(Double.self, forKey: .value) ?? 0
         self.unit = try container.decodeIfPresent(Unit.self, forKey: .unit)
         self.unitType = try container.decodeIfPresent(Int.self, forKey: .unitType) ?? 0
-        self.phrase = try container.decodeIfPresent(Phrase.self, forKey: .phrase)
+        self.phrase = try container.decodeIfPresent(String.self, forKey: .phrase)
     }
-}
-
-enum Phrase: String, Codable {
-    case cold = "Cold"
-    case veryCold = "Very Cold"
 }
 
 enum Unit: String, Codable {
