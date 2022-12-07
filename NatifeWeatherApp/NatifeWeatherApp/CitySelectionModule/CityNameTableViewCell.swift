@@ -18,6 +18,8 @@ final class CityNameTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(label)
+        self.selectionStyle = .none
+        self.tintColor = .blue
         setupConstraints()
     }
     

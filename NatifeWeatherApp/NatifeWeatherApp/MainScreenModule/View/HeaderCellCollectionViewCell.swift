@@ -54,7 +54,7 @@ final class HeaderCellCollectionViewCell: UICollectionViewCell {
         imageView.image = UIImage(named: data.weather[0].icon.image)
         let date = Date(timeIntervalSince1970: Double(data.dt))
         let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm"
+        formatter.dateFormat = "HH:mm, EE"
         let dateString = formatter.string(from: date)
         hourLabel.text = dateString
         temperatureLabel.text = String(data.main.temp)

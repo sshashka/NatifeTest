@@ -11,6 +11,24 @@
         }
       },
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "color-space" : "srgb",
+        "components" : {
+          "alpha" : "0.750",
+          "blue" : "0xE2",
+          "green" : "0x90",
+          "red" : "0x4A"
+        }
+      },
+      "idiom" : "universal"
     }
   ],
   "info" : {

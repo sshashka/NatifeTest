@@ -379,8 +379,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
             endingLineNumber = "131"
-            landmarkName = "locationManagerDidChangeAuthorization(_:)"
-            landmarkType = "7">
+            landmarkName = "MainScreenViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -633,8 +633,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -649,8 +649,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
             <Locations>
@@ -697,8 +697,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -713,8 +713,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -729,8 +729,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -745,8 +745,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -761,8 +761,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -777,8 +777,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -793,8 +793,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
             <Locations>
@@ -873,8 +873,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "showHourlyWeather(weather:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -891,8 +891,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "181"
             endingLineNumber = "181"
-            landmarkName = "MainScreenViewController"
-            landmarkType = "21">
+            landmarkName = "didSelectCity(lat:lon:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -971,8 +971,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "168"
             endingLineNumber = "168"
-            landmarkName = "MainScreenViewController"
-            landmarkType = "21">
+            landmarkName = "showDailyWeather(weather:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

@@ -13,10 +13,10 @@ struct CityCodeModel: Codable {
     let key, type: String
     let rank: Int
     let localizedName, englishName, primaryPostalCode: String
-    let region, country: Country
+    let region, country: Country?
     let administrativeArea: AdministrativeArea?
     let timeZone: TimeZone?
-    let geoPosition: GeoPosition
+    let geoPosition: GeoPosition?
     let isAlias: Bool
     let supplementalAdminAreas: [Int]
     let dataSets: [String]
@@ -48,11 +48,11 @@ struct CityCodeModel: Codable {
         self.localizedName = try container.decodeIfPresent(String.self, forKey: .localizedName) ?? "No data"
         self.englishName = try container.decodeIfPresent(String.self, forKey: .englishName) ?? "No data"
         self.primaryPostalCode = try container.decodeIfPresent(String.self, forKey: .primaryPostalCode) ?? "No data"
-        self.region = try container.decode(Country.self, forKey: .region)
-        self.country = try container.decode(Country.self, forKey: .country)
+        self.region = try container.decodeIfPresent(Country.self, forKey: .region)
+        self.country = try container.decodeIfPresent(Country.self, forKey: .country)
         self.administrativeArea = try container.decodeIfPresent(AdministrativeArea.self, forKey: .administrativeArea) 
         self.timeZone = try container.decodeIfPresent(TimeZone.self, forKey: .timeZone) ?? nil
-        self.geoPosition = try container.decode(GeoPosition.self, forKey: .geoPosition)
+        self.geoPosition = try container.decodeIfPresent(GeoPosition.self, forKey: .geoPosition)
         self.isAlias = try container.decodeIfPresent(Bool.self, forKey: .isAlias) ?? false
         self.supplementalAdminAreas = try container.decodeIfPresent([Int].self, forKey: .supplementalAdminAreas) ?? [0]
         self.dataSets = try container.decode([String].self, forKey: .dataSets)

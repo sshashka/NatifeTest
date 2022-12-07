@@ -11,6 +11,7 @@ final class ViewController: UIViewController {
     private var hourlyData: HourlyWeatherModel?
     private let dateLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -32,6 +33,7 @@ final class ViewController: UIViewController {
     
     private let tempLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -57,6 +59,7 @@ final class ViewController: UIViewController {
     private let humidityLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
         return label
     }()
     
@@ -81,14 +84,23 @@ final class ViewController: UIViewController {
         return imageView
     }()
     
+    private let windDirectionImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "ic_wind")
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     private let windLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private lazy var windStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [windImageView, windLabel])
+        let stackView = UIStackView(arrangedSubviews: [windImageView, windLabel, windDirectionImageView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .horizontal
         stackView.alignment = .center
