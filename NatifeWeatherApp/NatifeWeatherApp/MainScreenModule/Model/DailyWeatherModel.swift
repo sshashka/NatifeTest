@@ -223,8 +223,12 @@ enum Unit: String, Codable {
     case f = "F"
     case c = "C"
     case miH = "mi/h"
+    case kmH = "km/h"
     case unitIn = "in"
     case wM = "W/m²"
+    case mm = "mm"
+    case cm = "cm"
+    case m = "m"
 }
 
 // MARK: - Wind
@@ -260,6 +264,31 @@ struct Direction: Codable {
         self.degrees = try container.decodeIfPresent(Int.self, forKey: .degrees) ?? 0
         self.localized = try container.decodeIfPresent(String.self, forKey: .localized) ?? "No data"
         self.english = try container.decodeIfPresent(String.self, forKey: .english) ?? "No data"
+    }
+    
+    var image: String {
+        switch degrees {
+        case 0..<45:
+            return "icon_wind_n"
+        case 45..<90:
+            return "icon_wind_ne"
+        case 90..<135:
+            return "icon_wind_e"
+        case 135..<180:
+            return "icon_wind_se"
+        case 180..<225:
+            return "icon_wind_s"
+        case 225..<270:
+            return "icon_wind_ws"
+        case 270..<315:
+            return "icon_wind_w"
+        case 315..<360:
+            return "icon_wind_wn"
+        default:
+            return "icon_wind_w"
+        }
+        
+
     }
 }
 

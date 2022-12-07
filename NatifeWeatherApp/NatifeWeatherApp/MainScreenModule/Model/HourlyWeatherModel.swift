@@ -9,16 +9,16 @@ import Foundation
 
 // MARK: - HourlyWeatherModel
 struct HourlyWeatherModel: Codable {
-    let cod: String
-    let message: Int
+    let cod: String?
+    let message: Int?
     let cnt: Int
     let list: [List]?
     let city: City?
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.cod = try container.decodeIfPresent(String.self, forKey: .cod) ?? "NO DATA"
-        self.message = try container.decodeIfPresent(Int.self, forKey: .message) ?? 0
+        self.cod = try container.decodeIfPresent(String.self, forKey: .cod)
+        self.message = try container.decodeIfPresent(Int.self, forKey: .message)
         self.cnt = try container.decodeIfPresent(Int.self, forKey: .cnt) ?? 0
         self.list = try container.decodeIfPresent([List].self, forKey: .list)
         self.city = try container.decodeIfPresent(City.self, forKey: .city)

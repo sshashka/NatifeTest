@@ -217,11 +217,11 @@ extension ViewController {
         humidityLabel.text = "\(humidity ?? 0)%"
         windLabel.text = "\(wind ?? 0) ms/s"
         conditionsImageView.image = UIImage(named: data.day!.image)
+        windDirectionImageView.image = UIImage(named: (data.day!.wind?.direction!.image)!)
     }
     
     func showHourlyWeather(weather: HourlyWeatherModel) {
         self.hourlyData = weather
-        print(weather)
         collectionView.reloadData()
     }
 }

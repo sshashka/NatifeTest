@@ -19,7 +19,7 @@ struct CityCodeModel: Codable {
     let geoPosition: GeoPosition?
     let isAlias: Bool
     let supplementalAdminAreas: [Int]
-    let dataSets: [String]
+    let dataSets: [String]?
 
     enum CodingKeys: String, CodingKey {
         case version = "Version"
@@ -55,7 +55,7 @@ struct CityCodeModel: Codable {
         self.geoPosition = try container.decodeIfPresent(GeoPosition.self, forKey: .geoPosition)
         self.isAlias = try container.decodeIfPresent(Bool.self, forKey: .isAlias) ?? false
         self.supplementalAdminAreas = try container.decodeIfPresent([Int].self, forKey: .supplementalAdminAreas) ?? [0]
-        self.dataSets = try container.decode([String].self, forKey: .dataSets)
+        self.dataSets = try container.decodeIfPresent([String].self, forKey: .dataSets)
     }
 }
 

@@ -14,8 +14,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/MainScreenService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "MainScreenService"
             landmarkType = "21">
          </BreakpointContent>
@@ -553,8 +553,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/MainScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "showDailyWeather(weather:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -701,6 +701,38 @@
             endingLineNumber = "213"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "80F5CD94-F8EA-4543-AA31-05DE183940AC - 8181651411b40a7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NatifeWeatherApp.ViewController.showData(data: NatifeWeatherApp.DailyForecast, humanBeingDate: Swift.String) -&gt; ()"
+                  moduleName = "NatifeWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sashavasylenko/Documents/NatifeTest/NatifeWeatherApp/NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "213"
+                  endingLineNumber = "213"
+                  offsetFromSymbolStart = "768">
+               </Location>
+               <Location
+                  uuid = "80F5CD94-F8EA-4543-AA31-05DE183940AC - 8181651411b40a7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NatifeWeatherApp.ViewController.showData(data: NatifeWeatherApp.DailyForecast, humanBeingDate: Swift.String) -&gt; ()"
+                  moduleName = "NatifeWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sashavasylenko/Documents/NatifeTest/NatifeWeatherApp/NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "213"
+                  endingLineNumber = "213"
+                  offsetFromSymbolStart = "912">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -717,6 +749,38 @@
             endingLineNumber = "214"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "257DF5FA-C1AB-4B5B-88F6-737C5EF0EFEF - 8181651411b40a51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NatifeWeatherApp.ViewController.showData(data: NatifeWeatherApp.DailyForecast, humanBeingDate: Swift.String) -&gt; ()"
+                  moduleName = "NatifeWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sashavasylenko/Documents/NatifeTest/NatifeWeatherApp/NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "1012">
+               </Location>
+               <Location
+                  uuid = "257DF5FA-C1AB-4B5B-88F6-737C5EF0EFEF - 8181651411b40a51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NatifeWeatherApp.ViewController.showData(data: NatifeWeatherApp.DailyForecast, humanBeingDate: Swift.String) -&gt; ()"
+                  moduleName = "NatifeWeatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sashavasylenko/Documents/NatifeTest/NatifeWeatherApp/NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "1252">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -777,8 +841,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "showData(data:humanBeingDate:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -841,8 +905,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/MainScreenService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "getHourlyForecast(lat:lon:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -873,8 +937,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
             landmarkName = "showHourlyWeather(weather:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -889,10 +953,10 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/MainScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "didSelectCity(lat:lon:)"
-            landmarkType = "7">
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "MainScreenViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -905,8 +969,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/MainScreenService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "getHourlyForecast(lat:lon:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -921,8 +985,8 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/MainScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "didSelectCity(lat:lon:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -969,10 +1033,10 @@
             filePath = "NatifeWeatherApp/MainScreenModule/View/MainScreenViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "showDailyWeather(weather:)"
-            landmarkType = "7">
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "MainScreenViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -988,6 +1052,22 @@
             startingLineNumber = "82"
             endingLineNumber = "82"
             landmarkName = "coreLocationButtonDidTap()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC40AD44-53AB-42F5-A18A-74B3B7351316"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NatifeWeatherApp/MainScreenModule/View/MainScreenViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

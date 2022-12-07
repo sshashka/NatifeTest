@@ -164,6 +164,7 @@ extension MainScreenViewController: MainScreenModuleViewProtocol {
     func showDailyWeather(weather: DailyWeatherModel) {
         self.data = weather
         tableView.reloadData()
+        currentWeatherViewController.showData(data: weather.dailyForecasts[0], humanBeingDate: presenter?.convertStringToDate(date: weather.dailyForecasts[0].date, to: "E, d MMM") ?? "No data")
         tableView.selectRow(at: IndexPath(row: 0, section: 0), animated: true, scrollPosition: .top)
     }
     

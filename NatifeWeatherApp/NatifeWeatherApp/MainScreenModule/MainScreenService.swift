@@ -25,7 +25,7 @@ class MainScreenService: RestApi {
     }
     
     func linkStringForWeather(code: String) -> String {
-        return baseURLForWeather + "\(code)?" + currentWeatherToken + "&metric=true"
+        return baseURLForWeather + "\(code)?" + currentWeatherToken + "&metric=true" + "&details=true"
     }
     
     func linkStringForHourlyWeatcher(lat: Double, lon: Double) -> String {
@@ -64,6 +64,7 @@ extension MainScreenService: MainScreenServiceProtocol {
                 let result = try decoder.decode(DailyWeatherModel.self, from: data)
                 DispatchQueue.main.async {
                     completion(result)
+                    print(result.dailyForecasts[0].day?.wind)
                 }
             } catch {
                 print(error)
