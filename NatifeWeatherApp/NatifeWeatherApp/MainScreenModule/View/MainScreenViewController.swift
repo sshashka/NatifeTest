@@ -64,6 +64,8 @@ private extension MainScreenViewController {
         cityChangeButton.setTitle(cityName, for: .normal)
         cityChangeButton.addTarget(self, action: #selector(citySelectionButtonDidTap), for: .touchUpInside)
         cityChangeButton.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
+        citySelectionButton.customView?.setContentHuggingPriority(.defaultLow + 1, for: .horizontal)
+        citySelectionButton.customView?.setContentCompressionResistancePriority(.defaultHigh + 1, for: .horizontal)
         
         
         navigationItem.rightBarButtonItem = mapButton
