@@ -17,7 +17,7 @@ protocol MainScreenModulePresenterProtocol: AnyObject {
     func getHourlyWeather(lat: Double, lon: Double)
 }
 
-class MainScreenModulePresenter: MainScreenModulePresenterProtocol {
+final class MainScreenModulePresenter: MainScreenModulePresenterProtocol {
     
     let service: MainScreenServiceProtocol
     weak var view: MainScreenModuleViewProtocol?

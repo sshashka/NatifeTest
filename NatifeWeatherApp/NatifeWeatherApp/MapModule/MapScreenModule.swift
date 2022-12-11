@@ -25,6 +25,7 @@ final class MapScreenModule: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(mapKitView)
+        view.backgroundColor = UIColor(named: "MainBlue")
         mapKitView.delegate = self
         setupCities()
         setupCosntraints()
