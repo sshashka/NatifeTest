@@ -140,6 +140,7 @@ final class ViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [dateLabel, infoStackView, collectionView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
+        stackView.setCustomSpacing(32, after: dateLabel)
         stackView.setCustomSpacing(32, after: infoStackView)
         stackView.distribution = .fill
         return stackView
@@ -193,6 +194,7 @@ private extension ViewController {
             rootStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             rootStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             rootStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
             collectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.33),
             infoStackView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.35)
         ])

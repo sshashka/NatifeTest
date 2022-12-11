@@ -48,10 +48,23 @@ final class MainScreenViewController: UIViewController {
         coreLocationManager.requestAlwaysAuthorization()
         setupChildView()
     }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        let currentVCVerticalWindth = currentWeatherViewController.view.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.7)
+        currentVCVerticalWindth.priority = .defaultLow
+        if view.traitCollection.verticalSizeClass == .compact {
+            stackView.axis = .horizontal
+            
+        } else {
+            stackView.axis = .vertical
+            NSLayoutConstraint.activate([
+                currentVCVerticalWindth
+            ])
+        }
+    }
 }
 
 private extension MainScreenViewController {
-    
     func setupChildView() {
         addChild(currentWeatherViewController)
         currentWeatherViewController.didMove(toParent: self)
@@ -59,7 +72,7 @@ private extension MainScreenViewController {
     func setupNavVC() {
         let mapButton = UIBarButtonItem(image: UIImage(named: "ic_my_location"), style: .plain, target: self, action: #selector(mapLocationButtonDidTap))
         let coreLocationButton = UIBarButtonItem(image: UIImage(named: "ic_place"), style: .plain, target: self, action: #selector(coreLocationButtonDidTap))
-
+        
         let citySelectionButton = UIBarButtonItem(customView: cityChangeButton)
         cityChangeButton.setTitle(cityName, for: .normal)
         cityChangeButton.addTarget(self, action: #selector(citySelectionButtonDidTap), for: .touchUpInside)
@@ -91,12 +104,15 @@ private extension MainScreenViewController {
     }
     
     func setupConstraints() {
+        let currentVCHeightConstraint = currentWeatherViewController.view.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6)
+        currentVCHeightConstraint.priority = .defaultLow
         NSLayoutConstraint.activate([
-            currentWeatherViewController.view.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
             stackView.topAnchor.constraint(equalTo: view.topAnchor),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            
+            currentVCHeightConstraint
         ])
     }
     
