@@ -32,7 +32,7 @@ final class MainScreenViewController: UIViewController {
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [currentWeatherViewController.view, tableView])
         stackView.axis = .vertical
-        stackView.distribution = .fillEqually
+        stackView.distribution = .fill
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -92,8 +92,8 @@ private extension MainScreenViewController {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            currentWeatherViewController.view.heightAnchor.constraint(equalToConstant: view.bounds.height/2),
-            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            currentWeatherViewController.view.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
+            stackView.topAnchor.constraint(equalTo: view.topAnchor),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor)

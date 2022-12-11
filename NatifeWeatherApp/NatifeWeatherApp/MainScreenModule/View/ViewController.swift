@@ -42,6 +42,8 @@ final class ViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [tempImageView, tempLabel])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .horizontal
+        stackView.alignment = .center
+        stackView.contentMode = .scaleToFill
         stackView.spacing = 16
         stackView.distribution = .fillProportionally
         return stackView
@@ -114,6 +116,8 @@ final class ViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [tempStackView, humidityStackView, windStackView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
+        stackView.setContentHuggingPriority(.defaultLow, for: .vertical)
+        stackView.setContentCompressionResistancePriority(.defaultHigh + 1, for: .vertical)
         stackView.distribution = .fillEqually
         stackView.alignment = .leading
         return stackView
@@ -136,8 +140,8 @@ final class ViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [dateLabel, infoStackView, collectionView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
-        stackView.contentMode = .scaleAspectFill
-        stackView.distribution = .fillEqually
+        stackView.setCustomSpacing(32, after: infoStackView)
+        stackView.distribution = .fill
         return stackView
     }()
     
@@ -166,6 +170,7 @@ private extension ViewController {
         collectionView.dataSource = self
         collectionView.register(HeaderCellCollectionViewCell.self, forCellWithReuseIdentifier: HeaderCellCollectionViewCell.identifier)
         view.addSubview(collectionView)
+        
     }
     
     func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
@@ -184,11 +189,12 @@ private extension ViewController {
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-//            infoStackView.heightAnchor.constraint(equalToConstant: 150),
             rootStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             rootStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             rootStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             rootStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.33),
+            infoStackView.heightAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.35)
         ])
     }
 }
