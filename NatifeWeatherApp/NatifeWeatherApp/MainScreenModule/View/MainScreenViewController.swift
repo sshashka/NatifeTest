@@ -51,15 +51,14 @@ final class MainScreenViewController: UIViewController {
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         let currentVCVerticalWindth = currentWeatherViewController.view.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.7)
-        currentVCVerticalWindth.priority = .defaultLow
+        currentVCVerticalWindth.priority = .defaultHigh
         if view.traitCollection.verticalSizeClass == .compact {
             stackView.axis = .horizontal
-            
-        } else {
-            stackView.axis = .vertical
             NSLayoutConstraint.activate([
                 currentVCVerticalWindth
             ])
+        } else {
+            stackView.axis = .vertical
         }
     }
 }
